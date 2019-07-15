@@ -1,19 +1,29 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Main from './components/main';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Text style={styles.header}>Weather App</Text>
+      <Main></Main>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
+    display: 'flex',
     justifyContent: 'center',
+    alignItems: 'center'
   },
+  header: {
+    flex: 2,
+    backgroundColor: '#F1DEFF',
+    textAlign: 'center',
+    width: '100%',
+    fontSize: 50,
+    fontWeight: 'bold',
+    marginBottom: 20
+  }
 });
